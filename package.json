@@ -1,0 +1,63 @@
+{
+  "name": "regret-prevention-system",
+  "displayName": "Regret Prevention System",
+  "description": "Automatically backup your workspace from terrifying llm powered IDE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "workspaceContains:**/*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "regret-prevention-system.enable",
+        "title": "Enable Regret Prevention System"
+      },
+      {
+        "command": "regret-prevention-system.disable",
+        "title": "Disable Regret Prevention System"
+      }
+    ],
+    "configuration": {
+      "title": "Regret Prevention System",
+      "properties": {
+        "regretPreventionSystem.backupPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path where backups will be stored",
+          "scope": "window"
+        },
+        "regretPreventionSystem.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable automatic backups",
+          "scope": "window"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshDM/regret-prevention-system.git"
+  },
+  "license": "MIT"
+} 
