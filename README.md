@@ -1,32 +1,35 @@
-# Regret Prevention System
+# **Regret Prevention System**  
 
-A VS Code extension that automatically creates backups of your workspace folders when they are opened.
+A **VS Code / Cursor IDE** extension that saves your code **before you break it**. Think of it as a **"panic button"** you don’t have to press.  
 
-## Features
+## **Features**  
 
-- Automatic backup creation when opening folders
-- Configurable backup location
-- Enable/disable backup functionality
-- Excludes node_modules and .git directories from backup
-- Timestamp-based backup folders
+- **Automatic backups** when you open a folder (because manual saving is for amateurs).  
+- **Configurable backup location**, because we know you'll forget where you put it.  
+- **Enable/disable backup** functionality—toggle it off if you like living dangerously.  
+- **Excludes `node_modules` and `.git`**, because nobody needs a 5GB backup of stuff they don’t understand.  
+- **Timestamp-based backups**, so you can pinpoint *exactly when you messed up.*  
 
-## Configuration
+## **Configuration**  
 
-This extension contributes the following settings:
+This extension lets you tweak the following settings (because we believe in *free will*):  
 
-* `regretPreventionSystem.backupPath`: Set the path where backups will be stored
-* `regretPreventionSystem.enabled`: Enable or disable automatic backups
+* `regretPreventionSystem.backupPath` – Where to store your backups, so they don’t clutter your desktop like your other “important files.”  
+* `regretPreventionSystem.enabled` – Turn automatic backups **on** or **off** (but let’s be honest, you should leave it on).  
 
-## How to Use
+## **How to Use**  
 
-1. Install the extension
-2. Open VS Code Settings
-3. Search for "Regret Prevention System"
-4. Set your desired backup path
-5. The extension will automatically create backups when you open folders
+1. Install the extension.  
+2. Open **VS Code / Cursor IDE** settings.  
+3. Search for **"Regret Prevention System"** (or just accept the default settings like everyone else).  
+4. Set your **backup path** (or don’t, we’ll handle it).  
+5. Open a folder, and we’ll **silently** save your code while you pretend you don’t make mistakes.  
 
-## Notes
+## **Notes**  
 
-- Backups are created in the format: `folderName_timestamp`
-- Each backup is stored in a separate folder
-- Large projects may take some time to backup 
+- Backups follow this **foolproof** format: `folderName_timestamp`.  
+- Each backup lives in its own little folder—so no **"Oops, I overwrote my last backup"** moments.  
+- If your project is huge, the backup might take a few seconds. But hey, *waiting is better than rewriting everything.*  
+
+You're welcome. 🚀
+
